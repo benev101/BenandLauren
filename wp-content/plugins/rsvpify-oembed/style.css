@@ -1,0 +1,103 @@
+/*
+ * Admin UI for RSVPify Embedder
+ * Version: 3.2
+ * Last updated: 2025-05-02
+ */
+
+/* Container */
+.rsvpify-wrap {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.rsvpify-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 160px;
+}
+
+/* Instruction text */
+.rsvpify-instructions {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* URL input + Generate button */
+#rsvpify_url {
+  width: calc(100% - 120px);
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.generate-button {
+  height: 36px;
+  padding: 0 16px;
+  margin-left: 8px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* Section heading */
+.rsvpify-wrap h2 {
+  margin: 30px 0 12px;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+/* Shortcode list */
+#rsvpify_list .rsvpify-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* The code block */
+.rsvpify-item code {
+  flex: 1 1 auto;
+  display: block;
+  background: #f7f7f7;
+  color: #333;
+  font-family: Menlo, Consolas, monospace;
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+/* Copy & Delete buttons – identical styling */
+.rsvpify-item .copy-button,
+.rsvpify-item .delete-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 10px;
+  margin-left: 8px;
+  border: 1px solid #337ab7;
+  border-radius: 3px;
+  background: #fff;
+  color: #337ab7;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Trash icon color & size */
+.rsvpify-item .delete-button .dashicons-trash {
+  font-size: 16px;
+  color: inherit;
+}

@@ -1,0 +1,23 @@
+/*
+ * Frontend CSS for RSVPify embed responsiveness
+ * Version: 3.2
+ * Last updated: 2025-05-02
+ */
+
+/* 16:9 aspect-ratio wrapper */
+.rsvpify-embed-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000; /* optional placeholder color */
+}
+
+.rsvpify-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+}
