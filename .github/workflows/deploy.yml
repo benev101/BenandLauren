@@ -12,4 +12,4 @@ jobs:
               run: npm install -g staticrypt@3.*
             - name: Encrypt with Staticrypt
               run: >
-                staticrypt Ben-Lauren2027/* -r -d Ben-Lauren2027 -p benlauren27 --short
+                staticrypt * -r -d . -p ${{ secrets.SITEPW }} --short
