@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Install staticrypt
-              run: npm install staticrypt            
+              run: npm install -g staticrypt@3.*           
             - name: Encrypt with Staticrypt
               run: |
                 staticrypt Ben-Lauren2027/* -r -d Ben-Lauren2027 \
