@@ -10,7 +10,7 @@ jobs:
             - name: Install staticrypt
               run: npm install -g staticrypt@3.*           
             - name: Encrypt with Staticrypt
-              run: |
-                staticrypt index.html -p benlauren27
+              run: >
+                staticrypt index.html -p benlauren27 --short
                 --template-title "Login To Our Wedding Site"
                 --template-instructions "Enter the password from your invitation"
