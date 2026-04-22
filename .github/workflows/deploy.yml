@@ -12,7 +12,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: Install staticrypt
-              run: npm install -g staticrypt@3.*
+              run: npm install -g staticrypt@latest
             - name: Encrypt with Staticrypt
               run: >
                 staticrypt index.html -p ${{ secrets.SITEPW }} --short --template-title "Login To Our Wedding Site" --template-instructions "Enter the password from your invitation" --template-button "Open Page"
