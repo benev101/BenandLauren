@@ -7,10 +7,9 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v3
             - name: Install staticrypt
-              run: npm install -g staticrypt@3.*           
+              run: npm install -g staticrypt@3.*
             - name: Encrypt with Staticrypt
               run: >
                 staticrypt index.html -p benlauren27 --short
-                --template-title "Login To Our Wedding Site"
-                --template-instructions "Enter the password from your invitation"
