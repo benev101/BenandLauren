@@ -13,3 +13,5 @@ jobs:
             - name: Encrypt with Staticrypt
               run: >
                 staticrypt * -r -d . -p ${{ secrets.SITEPW }} --short
+                --template-title "Login To Our Wedding Site" \
+                --template-instructions "Enter the password from your invitation" \
