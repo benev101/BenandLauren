@@ -20,7 +20,7 @@ jobs:
               run: npm install -g staticrypt@latest
             - name: Encrypt with Staticrypt
               run: >
-                staticrypt index.html -p ${{ secrets.SITEPW }} --short --template-title "Login To Our Wedding Site" --template-instructions "Enter the password from your invitation" --template-button "Open Page"
+                staticrypt index.html -p ${{ secrets.SITEPW }} --short --template-title "Login To Our Wedding Site" --template-instructions "Enter the password from your invitation" --template-button "Open Page" --template-color-secondary "#E2D6C7" --template-color-primary "#0086E1"
             - name: Clean up
               run: |
                 mv encrypted/index.html index.html
